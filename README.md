@@ -12,3 +12,5 @@ The model used in this project is made using the concept of Natural Language Pro
 <h2>Website</h2>
 This project uses a website as an interface in which users have registered accounts. The victim sends a message as a query(input) in the website which then passes it to the deployed model(using Flask) which classifies the type of disaster and then sends a notification to the registered account of the appropriate disaster relief agency. The website makes use of HTML, CSS and JavaScript for frontend and MongoDB, Flask and NodeJS for backend.
 <br>
+<h2>Drive Link for the Random Forest Model</h2>
+https://drive.google.com/drive/folders/1wNbSg3F_4P77t6EhB5kfQgwMAVq8EY_V?usp=sharing
