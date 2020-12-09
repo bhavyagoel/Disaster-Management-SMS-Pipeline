@@ -1,0 +1,26 @@
+{% extends "basic.html" %} {% block content %}
+<form action="/" method="POST">
+  <div class="form-group">
+    <label for="message">Distress Message</label>
+    <input
+      type="text"
+      class="form-control"
+      name="message"
+      id="message"
+      aria-describedby="Message"
+      placeholder="In Distress ?  Enter Message"
+    />
+    <small id="DistressHelp" class="form-text text-muted"
+      >We'll get you help ASAP.</small
+    >
+  </div>
+  <div class="controls">
+    <button type="submit" class="btn btn-outline-dark">Help Me</button>
+    <a href="/graphs"
+      ><small id="DistressHelp" class="form-text text-muted"
+        >See Graphs</small
+      ></a
+    >
+  </div>
+</form>
+{% endblock content%}

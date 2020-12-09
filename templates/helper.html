@@ -1,0 +1,15 @@
+{% extends 'basic.html'%} {% block content %}
+<div class="container-fluid row">
+  {% for element in cards %}
+  <div class="card p-2 m-3" style="width: 18rem">
+    <div class="card-body">
+      <h5 class="card-title">{{element.typeClassified}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">
+        Location: {{element.Location}}
+      </h6>
+      <p class="card-text">Message Text Sent By User : {{element.text}}.</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock content %}

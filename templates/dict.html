@@ -1,0 +1,11 @@
+{% extends 'basic.html'%}
+{% block content %}
+{% for key,value in obj.items() %}
+{% for element in value%}
+{% for ikey,ivalue in element.items()  %}
+{{key}} : {{ikey}} ---> {{ivalue}}<br>
+{% endfor %}
+{% endfor %}
+<hr>
+{% endfor %}
+{% endblock content %}
